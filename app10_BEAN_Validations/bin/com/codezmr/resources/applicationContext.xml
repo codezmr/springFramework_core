@@ -6,14 +6,16 @@
 	
 	
 	<bean id="userBean" class="com.codezmr.beans.User">
-	  <property name="uname" value="Zamir" />
-	  <property name="upwd" value="" />
-	  <property name="uage" value="0" />
+	  <property name="uname" value="Zamiruddin" />
+	  <property name="upwd" value="zmr123" />
+	  <property name="uage" value="10" />
 	  <property name="uemail" value="" />
 	  <property name="umobile" value="" />
 	</bean>
 	
-	<bean id="userValidator" class="com.codezmr.validator.UserValidator" />
+	<bean id="userValidator" class="com.codezmr.validator.UserValidator" >
+	  <property name="resource" value="/com/codezmr/resources/Error_Messages.properties" />
+	</bean>
 	
 	
 </beans>

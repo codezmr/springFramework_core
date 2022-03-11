@@ -6,13 +6,14 @@
 	
 	
 	<bean id="userBean" class="com.codezmr.beans.User">
-	  <property name="uname" value="CodeZMR" />
-	  <property name="upwd" value="zmr123" />
-	  <property name="uage" value="21" />
-	  <property name="uemail" value="codezmr.2021@gmail.com" />
-	  <property name="umobile" value="1029384756" />
+	  <property name="uname" value="Zamir" />
+	  <property name="upwd" value="" />
+	  <property name="uage" value="0" />
+	  <property name="uemail" value="" />
+	  <property name="umobile" value="" />
 	</bean>
 	
+	<bean id="userValidator" class="com.codezmr.validator.UserValidator" />
 	
 	
 </beans>

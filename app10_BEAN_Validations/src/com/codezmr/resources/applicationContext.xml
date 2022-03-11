@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+	
+	
+	<bean id="userBean" class="com.codezmr.beans.User">
+	  <property name="uname" value="CodeZMR" />
+	  <property name="upwd" value="zmr123" />
+	  <property name="uage" value="21" />
+	  <property name="uemail" value="codezmr.2021@gmail.com" />
+	  <property name="umobile" value="1029384756" />
+	</bean>
+	
+	
+	
+</beans>

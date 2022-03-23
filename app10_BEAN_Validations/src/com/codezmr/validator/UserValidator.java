@@ -74,6 +74,13 @@ public class UserValidator implements Validator {
 			if(user.getUemail() == null || user.getUemail().equals("")){
 				
 				errors.rejectValue("uemail", "error.uemail.required", prop.getProperty("error.uemail.required"));
+			  }else {
+				  
+				  if(!user.getUemail().contains("@")) {
+					  
+					 errors.rejectValue("uemail", "error.uemail.invalid", prop.getProperty("error.uemail.invalid"));
+ 
+				  }
 			  }
 			
 			if(user.getUmobile() == null || user.getUmobile().equals("")){

@@ -7,10 +7,10 @@
 	
 	<bean id="userBean" class="com.codezmr.beans.User">
 	  <property name="uname" value="Zamiruddin" />
-	  <property name="upwd" value="zmr122222223" />
-	  <property name="uage" value="10" />
-	  <property name="uemail" value="" />
-	  <property name="umobile" value="" />
+	  <property name="upwd" value="zmr2221" />
+	  <property name="uage" value="16" />
+	  <property name="uemail" value="0000@gmail.com" />
+	  <property name="umobile" value="1117828282" />
 	</bean>
 	
 	<bean id="userValidator" class="com.codezmr.validator.UserValidator" >

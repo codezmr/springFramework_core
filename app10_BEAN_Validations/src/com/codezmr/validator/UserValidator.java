@@ -63,6 +63,12 @@ public class UserValidator implements Validator {
 			if(user.getUage() == 0){
 				
 				errors.rejectValue("uage", "error.uage.required", prop.getProperty("error.uage.required"));
+			  }else {
+				  
+				  if(user.getUage() < 18 || user.getUage() > 25) {
+					  errors.rejectValue("uage", "error.uage.range", prop.getProperty("error.uage.range"));
+
+				  }
 			  }
 			
 			if(user.getUemail() == null || user.getUemail().equals("")){

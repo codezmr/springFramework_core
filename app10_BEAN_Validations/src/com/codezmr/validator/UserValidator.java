@@ -86,6 +86,12 @@ public class UserValidator implements Validator {
 			if(user.getUmobile() == null || user.getUmobile().equals("")){
 				
 				errors.rejectValue("umobile", "error.umobile.required", prop.getProperty("error.umobile.required"));
+			  }else {
+				  
+				  if(!user.getUmobile().startsWith("91-")) {
+					  errors.rejectValue("umobile", "error.umobile.invalid", prop.getProperty("error.umobile.invalid"));
+  
+				  }
 			  }
 
 		} catch (IOException e) {

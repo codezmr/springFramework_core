@@ -7,7 +7,7 @@
 	
 	<bean id="userBean" class="com.codezmr.beans.User">
 	  <property name="uname" value="Zamiruddin" />
-	  <property name="upwd" value="zmr123" />
+	  <property name="upwd" value="zmr1" />
 	  <property name="uage" value="10" />
 	  <property name="uemail" value="" />
 	  <property name="umobile" value="" />

@@ -45,6 +45,19 @@ public class UserValidator implements Validator {
 			if(user.getUpwd() == null || user.getUpwd().equals("")){
 				
 				errors.rejectValue("upwd", "error.upwd.required", prop.getProperty("error.upwd.required"));
+			  }else {
+				  
+				  if(user.getUpwd().length() < 6) {
+					  
+					errors.rejectValue("upwd", "error.upwd.minLength", prop.getProperty("error.upwd.minLength"));
+  
+				  }
+				  
+				  if(user.getUpwd().length() > 10) {
+					  
+						errors.rejectValue("upwd", "error.upwd.maxLength", prop.getProperty("error.upwd.maxLength"));
+	  
+					  }
 			  }
 		       
 			if(user.getUage() == 0){

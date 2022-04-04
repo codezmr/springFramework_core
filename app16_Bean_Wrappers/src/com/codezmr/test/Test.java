@@ -3,6 +3,7 @@ package com.codezmr.test;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 
@@ -54,6 +55,13 @@ public class Test {
 		System.out.println(bw.isWritableProperty("ename"));
 		System.out.println(bw.isWritableProperty("esal"));
 		System.out.println(bw.isWritableProperty("eaddr"));
+		System.out.println();
+		
+		//copy one bean object to another bean object.
+		
+		Employee emp1 = new Employee();
+		BeanUtils.copyProperties(emp, emp1);
+		emp1.getEmployeeDetails();
 		
 	}
 

@@ -8,6 +8,14 @@
 		<property name="eid" value="E-111" />
 		<property name="ename" value="CodeZMR" />
 		<property name="esal" value="200000" />
+		<property name="eaddr" value="07/40zmr-Bkpur-Mgr-Harbi-India" /> 
 	</bean>
 	
+	<bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+		  <map>
+		    <entry key="com.codezmr.beans.EmployeeAddress" value="com.codezmr.editor.EmployeeAddressEditor"/>
+		  </map>
+		</property>
+	</bean>
 </beans>

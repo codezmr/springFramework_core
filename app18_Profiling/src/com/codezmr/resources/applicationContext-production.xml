@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+   	   http://www.springframework.org/schema/beans/spring-beans.xsd"
+       
+       profile="production">
+        
+        <bean id="dbBean" class="com.codezmr.beans.DBBean">
+          <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+          <property name="driverURL" value="jdbc:mysql://localhost:3306/codezmrdb" />
+          <property name="dbUserName" value="root" />
+          <property name="dbPassword" value="codezmr" />
+        </bean>
+
+</beans>

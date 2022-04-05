@@ -8,7 +8,13 @@
 		<property name="eid" value="E-111" />
 		<property name="ename" value="CodeZMR" />
 		<property name="esal" value="200000" />
-		<property name="eaddr" value="07/40zmr-Bkpur-Mgr-Harbi-India" /> 
+		<property name="eaddr" value="07/40zmr-Bkpur-Mgr-Harbi-India" />
+		 
+		    <!-- Here provided address details in the form of text but we giving
+		         intimation to the IOC-Container to convert this text data 
+		         in the form of EmployeeAddress Bean and inject that bean into
+		         Employee Object
+		           -->
 	</bean>
 	
 	<bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
